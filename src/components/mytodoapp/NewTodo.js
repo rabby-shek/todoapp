@@ -1,4 +1,6 @@
-import React,{useState} from 'react'
+import React,{useState} from 'react';
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 const NewTodo = (props) => {
     const [todo ,setTodo] = useState({title : "",des : ""});
@@ -23,17 +25,28 @@ const NewTodo = (props) => {
        })
     }
   return (
-    <form className='form' onSubmit={handleSubmit}>
-     <div className='formfield'>
-        <label htmlFor="title">Title </label>
-        <input type="text" id='title' name='title' value={title} onChange={handleChange}/>
-     </div>
-     <div className='formfield'>
-        <label htmlFor="des">Description </label>
-        <textarea type="text" id='des' name='des' value={des} onChange={handleChange}/>
-     </div>
-     <button>Add New</button>
-    </form>
+    <>
+
+    <Form  onSubmit={handleSubmit}>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>Title</Form.Label>
+        <Form.Control type="text" name='title' value={title} onChange={handleChange} placeholder="Enter title" />
+        <Form.Text className="text-muted">
+        </Form.Text>
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>Example textarea</Form.Label>
+        <Form.Control as="textarea" rows={3}  id='des' name='des' value={des} onChange={handleChange}/>
+      </Form.Group>
+      <Button variant="primary" type="submit">
+        Submit
+      </Button>
+    </Form>
+
+    </>
+
+    
   )
 }
 
