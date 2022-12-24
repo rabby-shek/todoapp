@@ -1,0 +1,74 @@
+.body{
+    flex-direction: column;
+    background-color: #444;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+button{
+    background-color: red;
+    border: none;
+}
+.todos{
+    width: 50%;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    overflow: scroll;
+    height: 60vh;
+}
+.todo{
+    background-color: #222;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+.todo:hover{
+    background-color: #111;
+}
+.form{
+    width: 50%;
+    background-color: #333;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+}
+.formfield{
+    margin: 1rem 0;
+    display: flex;
+}
+.formfield label{
+    flex-basis: 20%;
+}
+.formfield input{
+    flex-basis: 80%;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+}
+.formfield textarea{
+    flex-basis: 80%;
+    border: none;
+    border-radius: 0.6rem;
+    padding: 0.2rem;
+    resize: none;
+}
+.form button{
+    background-color: green;
+    color: white;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+.form button:hover{
+    background-color: greenyellow;
+    color: black;
+}

@@ -1,0 +1,24 @@
+.form{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    padding-top: 30px;
+    height: 300px;
+}
+.form input{
+    width: 300px;
+    height: 30px;
+   
+}
+.form textarea{
+    width: 300px;
+}
+button {
+    background-color: orange;
+    color: white;
+}
+button:hover{
+    background-color: white;
+    color:  black;
+}

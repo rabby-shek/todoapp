@@ -1,0 +1,22 @@
+.hi{
+  
+    width: 70%;
+    margin-left: 15%;
+    height: 700px;
+    border: 1px solid black;
+    
+}
+nav{
+    margin-left: 30%;
+}
+nav ul li{
+    list-style-type: none;
+    margin-left: 5%;
+    display: inline-block;
+   
+}
+nav ul li .link{
+    text-decoration: none;
+    color: black;
+
+}
